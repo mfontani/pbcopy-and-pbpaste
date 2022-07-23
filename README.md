@@ -7,6 +7,7 @@ Currently supported:
 
 - Linux (needs `xsel` installed and in the `$PATH`)
 - Windows Subsystem for Linux (needs `clip.exe` in the `$PATH`)
+- OSX (needs `/usr/bin/pbcopy` and `/usr/bin/pbpaste`)
 
 Requirements:
 - bash

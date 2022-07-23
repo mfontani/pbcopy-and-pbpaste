@@ -27,7 +27,9 @@
 if command -v xsel >/dev/null 2>&1 ; then
     xsel --clipboard --output
 # XXX another linux alternative to xsel?
-# XXX OSX: find/use "pbpaste"
+# OSX: find/use "pbpaste"
+elif -x /usr/bin/pbpaste >/dev/null 2>&1; then
+    /usr/bin/pbpaste
 # WSL: use "powershell.exe"
 elif command -v powershell.exe >/dev/null 2>&1; then
     # Get-Clipboard outputs a stray added newline (\r\n on Windows), which has

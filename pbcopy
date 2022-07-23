@@ -27,7 +27,9 @@
 if command -v xsel >/dev/null 2>&1 ; then
     xsel --clipboard --input
 # XXX another linux alternative to xsel?
-# XXX OSX: find/use "pbcopy"
+# OSX: find/use "pbcopy"
+elif -x /usr/bin/pbcopy >/dev/null 2>&1; then
+    /usr/bin/pbcopy
 # WSL: use "clip.exe"
 elif command -v clip.exe >/dev/null 2>&1; then
     clip.exe
