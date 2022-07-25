@@ -24,7 +24,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 # Prefer xsel
-if command -v xsel >/dev/null 2>&1 ; then
+if command -v xsel >/dev/null 2>&1; then
     xsel --clipboard --input
 # XXX another linux alternative to xsel?
 # OSX: find/use "pbcopy"
