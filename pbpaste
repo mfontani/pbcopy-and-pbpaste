@@ -26,7 +26,9 @@
 # Prefer xsel
 if command -v xsel >/dev/null 2>&1; then
     xsel --clipboard --output
-# XXX another linux alternative to xsel?
+# Fall back to xclip
+elif command -v xclip >/dev/null 2>&1; then
+    xclip -selection clipboard -out
 # OSX: find/use "pbpaste"
 elif [[ -x /usr/bin/pbpaste ]]; then
     /usr/bin/pbpaste

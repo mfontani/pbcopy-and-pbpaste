@@ -7,7 +7,7 @@ On `X`, both commands act on the `clipboard` selection.
 
 Currently supported:
 
-- Linux (needs `xsel` installed and in the `$PATH`)
+- Linux (needs `xsel` or `xclip` installed and in the `$PATH`)
 - Windows Subsystem for Linux (needs `clip.exe` in the `$PATH`)
 - OSX (needs `/usr/bin/pbcopy` and `/usr/bin/pbpaste`)
 

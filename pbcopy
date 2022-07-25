@@ -26,7 +26,9 @@
 # Prefer xsel
 if command -v xsel >/dev/null 2>&1; then
     xsel --clipboard --input
-# XXX another linux alternative to xsel?
+# Fall back to xclip
+elif command -v xclip >/dev/null 2>&1; then
+    xclip -selection clipboard -in
 # OSX: find/use "pbcopy"
 elif [[ -x /usr/bin/pbcopy ]]; then
     /usr/bin/pbcopy
