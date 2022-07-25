@@ -28,7 +28,7 @@ if command -v xsel >/dev/null 2>&1 ; then
     xsel --clipboard --output
 # XXX another linux alternative to xsel?
 # OSX: find/use "pbpaste"
-elif -x /usr/bin/pbpaste >/dev/null 2>&1; then
+elif [[ -x /usr/bin/pbpaste ]]; then
     /usr/bin/pbpaste
 # WSL: use "powershell.exe"
 elif command -v powershell.exe >/dev/null 2>&1; then
