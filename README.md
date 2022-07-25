@@ -3,6 +3,8 @@
 These are shell wrappers so one can use `pbcopy` and `pbpaste` in their
 dotfiles no matter which system they're in.
 
+On `X`, both commands act on the `clipboard` selection.
+
 Currently supported:
 
 - Linux (needs `xsel` installed and in the `$PATH`)
